@@ -1,0 +1,260 @@
+.App {
+  text-align: center;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+body {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/******************************************************************************/
+/* Navbar */
+.appNav {
+  margin: 0 16px 0 0;
+  background: #0B1F8D;
+  position: fixed; /* 고정 위치 설정 */
+  Top: 0;       /* 페이지 하단에 위치 */
+  left: 0;         /* 왼쪽 가장자리부터 시작 */
+  width: 100%;
+
+}
+
+.centeredImage {
+  max-width: 100%; /* 이미지가 appNav의 너비를 초과하지 않도록 설정 */
+  max-height: 100%; /* 이미지가 appNav의 높이를 초과하지 않도록 설정 */
+  height: 60px;    /* 이미지의 원래 비율을 유지 */
+  justify-content: center; /* 수평 중앙 정렬 */
+}
+
+.rightNav {
+  float: right;
+}
+
+.pageButtonBold {
+  font-weight: 800;
+}
+
+.buttonContainer {
+  background-color: #0B1F8D;
+  border-radius: 16px;
+  display: inline-block;
+}
+
+.buttonContainerBottom {
+  display: flex;        /* Flexbox 레이아웃 사용 */
+  justify-content: center; /* 내부 요소들을 중앙에 정렬 */
+  align-items: center;     /* 세로 방향 중앙 정렬 */
+  width: 100%;             /* 전체 너비를 차지하도록 설정 */
+  margin-left: auto;       /* 자동으로 왼쪽 여백 계산 */
+  margin-right: auto;      /* 자동으로 오른쪽 여백 계산 */
+  color: rgb(254, 254, 254)
+  
+}
+.connectButton {
+  background-color: rgb(40, 100, 168) !important;
+  border-radius: 16px !important;
+  border: 1px solid #fff !important;
+  color: rgb(254, 254, 254) !important;
+}
+
+.connectButtonContainer {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.connectButton:hover {
+  border-color: rgb(0, 53, 213) !important;
+}
+
+.hoverBold:hover {
+  font-weight: 800;
+}
+
+/******************************************************************************/
+/* Swap Container */
+.appBody {
+  height: 100%;
+  padding-top: 80px;
+}
+
+.swapContainer {
+  background-color: rgb(195, 199, 224);
+  width: 440px;
+  height: 350px;
+  margin: 0 auto;  /* 좌우 중앙 정렬 */
+  position: absolute;  /* 절대 위치 설정 */
+  top: 50%;  /* 상단에서 50% 위치 */
+  left: 50%;  /* 좌측에서 50% 위치 */
+  transform: translate(-50%, -50%);  /* 자신의 크기에 따라 위치 조정 */
+  border-radius: 24px;
+  border: 1px solid #fff;
+  padding: 6px;
+}
+
+.swapHeader {
+  text-align: left;
+  padding: 4px 20px 0px 20px;
+}
+
+.swapText {
+  color: #000;
+  font-size: 20px;
+}
+
+.gearContainer {
+  float: right;
+  font-size: 22px
+}
+
+/******************************************************************************/
+/* Currency Input */
+.currencyInput {
+  background-color: rgb(255, 255, 255);
+  margin: 10px !important;
+  padding: 10px;
+  border-radius: 20px;
+}
+.currencyInput:hover {
+  border-color: #65cdee !important;
+  border: 1px solid;
+}
+::placeholder {
+  opacity: 0.25;
+}
+.numberContainer {
+  text-align: left;
+}
+.spinnerContainer {
+  height: 55px;
+  line-height: 55px;
+}
+.currencyInputField {
+  font-size: 28px;
+  display: inline-block;
+  width: 100%;
+  border: none;
+  background-color: rgb(255, 255, 255);
+}
+.tokenContainer {
+  text-align: right;
+}
+.tokenName {
+  font-size: 28px;
+  display: block;
+  color: #000;
+}
+.balanceContainer {
+  display: block;
+}
+.balanceAmount {
+  width: 100%;
+  font-size: 16px;
+  display: inline;
+  color: #000;
+}
+
+/******************************************************************************/
+/* Ratio */
+.ratioContainer {
+  text-align: left;
+  margin-left: 10px;
+  height: 10px;
+  color: white
+}
+
+
+/******************************************************************************/
+/* Swap Button */
+.swapButtonContainer {
+  margin: 10px;
+}
+.swapButton {
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  font-size: 24px;
+  color: #fff;
+  border-radius: 20px;
+  background-color: #3f4c9e;
+  cursor: pointer
+}
+
+/******************************************************************************/
+/* Config Modal */
+
+.modaly {
+  position: fixed;
+  left: 0;
+  top: -510px;
+  right: -110px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(86, 90, 105);
+
+}
+
+.modal-content {
+  background-color: #fff;
+  width: 300px !important;
+  padding: 0px 15px;
+  background-color: rgb(237, 238, 242) !important;
+  border: 1px solid rgb(206, 208, 217) !important;
+  border-radius: 12px !important;
+}
+
+.modalTitle {
+  margin: auto;
+}
+
+.titleHeader {
+  margin-left: -12px;
+}
+.labelField {
+  padding-left: 0px !important;
+}
+.fieldContainer {
+  padding-left: 0px !important;
+}
+.inputField {
+  padding-left: 10px;
+  border-radius: 36px;
+  border: 1px solid #65cdee;
+  height: 2rem;
+  margin: 10px 0;
+  width: 100%;
+}
+.inputFieldUnitsContainer {
+  padding-left: 0px !important;
+  padding-top: 14px;
+}
+
+.appnavFoot {
+  position: fixed; /* 고정 위치 설정 */
+  bottom: 0;       /* 페이지 하단에 위치 */
+  left: 0;         /* 왼쪽 가장자리부터 시작 */
+  width: 100%;     /* 전체 너비 차지 */
+  height: 60px;
+  background: #0B1F8D;
+  margin: 0;
+  padding: 10px 16px; /* 상하단 여백 조정 */
+  box-sizing: border-box; /* 패딩이 너비에 포함되도록 설정 */
+}
+
+.whiteText {
+  color: #FFFFFF; /* 흰색 색상 */
+}
+
+/******************************************************************************/
+/* exchange ratio*/
+
+.exRatio {
+  color: #FFFFFF; 
+}
